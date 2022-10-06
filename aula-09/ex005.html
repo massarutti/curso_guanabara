@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao DOM</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h1body">Introducao ao DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>
+      <p><strong>Atencao</strong> Aqui mais um teste</p>
+      <h4>Testando outro Titulo</h4>
+    </div>
+
+    <script>
+      var n1 = document.getElementById("h1body");
+      n1.style.color = "white";
+      var p1 = document.getElementsByTagName("p")[1];
+      document.write("o segundo paragrafo é....  " + p1.innerHTML);
+
+      //utilizando querySelector
+      var h = window.document.querySelector();
+
+      /*var n1 = document.getElementsByTagName("p")[0];
+      document.write(n1.innerText);
+      var corpo = document.body;
+      corpo.style.background = "black";*/
+    </script>
+  </body>
+</html>
