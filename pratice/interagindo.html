@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado de uma Soma</title>
+    <style>
+      div#area {
+        width: 200px;
+        height: 300px;
+        background-color: black;
+        color: blue;
+        font-family: "Times New Roman", Times, serif, "Arial Narrow", Arial,
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">INTERAGIR COM A DIV!</div>
+
+    <script>
+      var a = window.document.getElementById("area");
+      a.addEventListener("click", clicar);
+      a.addEventListener("mouseenter", entrar);
+      a.addEventListener("mouseout", sair);
+      function clicar() {
+        a.innerHTML = "Clicou";
+        a.style.background = "yellow";
+      }
+
+      function entrar() {
+        a.innerHTML = "Entrou";
+        a.style.background = "red";
+      }
+
+      function sair() {
+        a.innerHTML = "Saiu";
+        a.style.background = "grey";
+      }
+    </script>
+  </body>
+</html>
