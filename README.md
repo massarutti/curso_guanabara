@@ -1,2 +1,2 @@
-# curso_guanabara
+# curso_guanabara_javascript
 Exercicios Curso em Video.
